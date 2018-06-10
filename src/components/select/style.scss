@@ -1,0 +1,6 @@
+._minimal_select_child_wrapper {
+  display: none;
+  &.active {
+    display: block;
+  }
+}

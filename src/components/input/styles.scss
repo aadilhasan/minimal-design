@@ -1,0 +1,38 @@
+$primary_color: #c3c3c3;
+._m-input {
+  border: 1px solid #ffff;
+  padding: 5px;
+  border-radius: 2px;
+  transition: all 0.3s;
+  &:hover {
+    border: 1px solid $primary_color;
+  }
+  &:focus {
+    outline: none;
+    box-shadow: 0px 0px 10px 0px #c3c3c3;
+    border: 1px solid $primary_color;
+  }
+}
+
+._m-input-wrapper {
+  border: 1px solid $primary_color;
+  border-radius: 2px;
+  display: inline-flex;
+  position: relative;
+  align-items: center;
+  ._m-input {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  ._m-input-prefix,
+  ._m-input-suffix {
+    position: absolute;
+    padding: 5px 10px;
+  }
+  ._m-input-prefix {
+    left: 0;
+  }
+  ._m-input-suffix {
+    right: 0;
+  }
+}
