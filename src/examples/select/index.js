@@ -1,11 +1,11 @@
 import React from 'react';
-import Select from '../../components/select';
+import Select, { Option } from '../../components/select';
 
 const SelectEx = () => (
   <Select>
     {' '}
     <ul>
-      <li> yo </li>
+      <Option value="Yo"> yo </Option>
       <li> yo yo </li>
       <li> yo yo yoo </li>
     </ul>{' '}
