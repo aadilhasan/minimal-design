@@ -2,7 +2,10 @@
 // import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
-export default function renderContent(el, parent) {
-  console.log(' render contet ', el, parent);
+export function renderContent(el, parent) {
   ReactDOM.render(el, parent);
+}
+
+export function bindListener(type = 'click', target, cb) {
+  target.addEventListener(type, cb);
 }

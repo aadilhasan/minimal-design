@@ -6,7 +6,7 @@
     display: none;
     position: absolute;
     border: 1px solid gray;
-    border-radius: 4px;
+    border-radius: 2px;
     &.active {
       display: block;
     }
@@ -17,6 +17,10 @@
     margin: 0;
     li {
       padding: 5px 10px;
+      border-bottom: 1px solid gray;
+      &:last-child {
+        border-bottom: none;
+      }
       &:hover,
       &:active {
         background-color: gray;
@@ -24,5 +28,18 @@
         cursor: pointer;
       }
     }
+  }
+}
+
+._minimal-select-wrapper {
+  display: inline-block;
+  .placeholder {
+    border: 1px solid gray;
+    padding: 5px 10px;
+    border-radius: 2px;
+    cursor: pointer;
+    -webkit-user-select: none; /* Chrome all / Safari all */
+    -moz-user-select: none; /* Firefox all */
+    -ms-user-select: none; /* IE 10+ */
   }
 }

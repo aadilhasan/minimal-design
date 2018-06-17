@@ -2,12 +2,12 @@ import React from 'react';
 import Select, { Option } from '../../components/select';
 
 const SelectEx = () => (
-  <Select>
+  <Select placeholder="Select Alpha">
     {' '}
     <ul>
-      <Option value="Yo"> yo </Option>
-      <li> yo yo </li>
-      <li> yo yo yoo </li>
+      <Option value="a"> A </Option>
+      <Option value="b"> B </Option>
+      <Option value="c"> C </Option>
     </ul>{' '}
   </Select>
 );
